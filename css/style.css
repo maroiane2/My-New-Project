@@ -7,7 +7,7 @@
 header {
     height: 45px;
     width: 100%;
-    background-color: #6e6e6e8a;
+    background-color: #6e6e6e8a /*583428*/;
     top: 0%;
 }
 
@@ -52,7 +52,7 @@ main {
 }
 
 .Home .hom-tex .hom-log {
-    margin: 0 0 55px 250px;
+    margin: 0 0 40px 50px;
 }
 
 .Home .hom-tex .hom-butt button {
@@ -89,7 +89,6 @@ main {
 }
 
 .views {
-
     border-bottom: solid rgb(0, 255, 128);
     border-top: solid rgb(0, 255, 128);
 }
