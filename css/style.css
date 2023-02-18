@@ -15,6 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 0 15px 0 15px;
+    font-family: 'Shantell Sans', cursive;
 
 }
 
@@ -45,7 +46,7 @@ main {
     align-items: center;
     justify-content: space-evenly;
     color: #583428;
-    font-family: 'Shantell Sans';
+    font-family: 'Lobster', cursive;
     text-indent: 6px;
     font-size: medium;
 }
@@ -72,13 +73,6 @@ main {
     border-bottom: solid 1px #313131;
     border-right: solid 1px #313131;
 }
-
-
-
-
-
-
-
 
 /* .Service{
 
