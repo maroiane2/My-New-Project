@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+/* header */
+
 header {
     height: 45px;
     width: 100%;
-    background-color: #6e6e6e8a /*583428*/;
+    background-color: #583428
+        /*583428*/
+    ;
     top: 0%;
 }
 
@@ -30,15 +34,19 @@ ul {
     margin: 8px;
 }
 
-a {
-    color: #000;
+.nav-bl ul li a {
+    color: #ffffff;
     text-decoration: none;
 }
 
+/* main */
+
 main {
     display: grid;
-    grid-template-rows: 613px 660px 660px 550px 200px;
+    grid-template-rows: 623px 660px 660px 550px 200px;
 }
+
+/* home */
 
 .Home {
     background-color: #E39A7F;
@@ -49,6 +57,9 @@ main {
     font-family: 'Lobster', cursive;
     text-indent: 6px;
     font-size: medium;
+    box-shadow:
+        inset 0px 10px 10px 0px #e39a7f00,
+        inset 0px -11px 8px -1px #c4ce86;
 }
 
 .Home .hom-tex .hom-log {
@@ -74,27 +85,75 @@ main {
     border-right: solid 1px #313131;
 }
 
-/* .Service{
+/* Service */
 
+.Service {
+    background-color: #c4ce86;
+}
+
+.Service .ser-al {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    width: 900px;
+    height: 500px;
+    background-color: #1A1A1A;
+    color: #71DB77;
+    margin: 85px 0 0 85px;
+    margin-left: 350px;
+    box-shadow: 10px -8px 1px 0 #0c0c0c;
+}
+
+/* .Service .ser-vid {
+    position: relative;
+    right: 300px;
+    top: 10px;
 } */
+
+.Service .ser-vid video {
+    position: relative;
+    right: 300px;
+    top: -25px;
+}
+
+.Service .con-hp {
+    margin-top: 50px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.Service .con-hp p {
+    color: #959595;
+    margin-top: 30px;
+}
+
+.Service .con-hp .p1 {
+    font-weight: bolder;
+}
+
+/* Offers */
 
 .Offers {
     border-bottom: solid #c8ff00;
-    border-top: solid #c8ff00;
 }
+
+/* Customer */
 
 .Customer {
     border-bottom: solid rgb(255, 0, 242);
     border-top: solid rgb(255, 0, 242);
 }
 
+/* views */
+
 .views {
     border-bottom: solid rgb(0, 255, 128);
     border-top: solid rgb(0, 255, 128);
 }
 
+/* footer */
+
 footer {
     height: 200px;
     width: 100%;
-    background-color: #1d1d1d;
+    background-color: #393939;
 }
