@@ -109,15 +109,10 @@ main {
     top: 10px;
 } */
 
-.Service .ser-vid .video {
+.Service .ser-vid video {
     position: relative;
     right: 300px;
     top: -25px;
-}
-/* test vidoe */
-.mi{
-    position: relative;
-    right: 300px;
 }
 
 .Service .con-hp {
