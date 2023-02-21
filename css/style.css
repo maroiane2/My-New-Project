@@ -43,7 +43,7 @@ ul {
 
 main {
     display: grid;
-    grid-template-rows: 623px 660px 660px 550px 200px;
+    grid-template-rows: 623px 680px 660px 550px 200px;
 }
 
 /* home */
@@ -89,9 +89,13 @@ main {
 
 .Service {
     background-color: #c4ce86;
+    box-shadow:
+    inset 0px 10px 10px 0px #e39a7f00,
+    inset 0px -11px 8px -1px #ffffff;
 }
 
 .Service .ser-al {
+    border-radius: 10px;
     display: grid;
     grid-template-columns: 35% 65%;
     width: 900px;
@@ -100,14 +104,12 @@ main {
     color: #71DB77;
     margin: 85px 0 0 85px;
     margin-left: 350px;
-    box-shadow: 10px -8px 1px 0 #0c0c0c;
 }
 
-/* .Service .ser-vid {
-    position: relative;
-    right: 300px;
-    top: 10px;
-} */
+.Service .ser-vid {
+    box-shadow:
+        inset 5px 0px 5px 5px #c4ce86;
+} 
 
 .Service .ser-vid video {
     position: relative;
@@ -132,9 +134,25 @@ main {
 
 /* Offers */
 
-.Offers {
-    border-bottom: solid #c8ff00;
+/* .Offers {
+    box-shadow: 0px -8px 2px 1px #ffffff;
+} */
+
+.Offers .al-off{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
 }
+
+.Offers .al-off .bak {
+    color: #fff;
+    background-color: #707070;
+    width: 300px;
+    height: 500px;
+}
+
+
 
 /* Customer */
 
