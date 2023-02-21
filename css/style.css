@@ -9,9 +9,7 @@
 header {
     height: 45px;
     width: 100%;
-    background-color: #583428
-        /*583428*/
-    ;
+    background-color: #583428;
     top: 0%;
 }
 
@@ -24,10 +22,13 @@ header {
 }
 
 ul {
+    list-style-type: none;
+}
+
+.nav-bl ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    list-style-type: none;
 }
 
 .nav-bl ul li {
@@ -90,8 +91,8 @@ main {
 .Service {
     background-color: #c4ce86;
     box-shadow:
-    inset 0px 10px 10px 0px #e39a7f00,
-    inset 0px -11px 8px -1px #ffffff;
+        inset 0px 10px 10px 0px #e39a7f00,
+        inset 0px -11px 8px -1px #ffffff;
 }
 
 .Service .ser-al {
@@ -109,7 +110,7 @@ main {
 .Service .ser-vid {
     box-shadow:
         inset 5px 0px 5px 5px #c4ce86;
-} 
+}
 
 .Service .ser-vid video {
     position: relative;
@@ -134,11 +135,11 @@ main {
 
 /* Offers */
 
-/* .Offers {
-    box-shadow: 0px -8px 2px 1px #ffffff;
-} */
+.Offers {
+    background-color: #fff;
+}
 
-.Offers .al-off{
+.Offers .al-off {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -146,10 +147,66 @@ main {
 }
 
 .Offers .al-off .bak {
-    color: #fff;
-    background-color: #707070;
+    background-color: #e7e5e5;
     width: 300px;
-    height: 500px;
+    height: 525px;
+    border-radius: 10px;
+    box-shadow: 5px 4px 5px 6px #9d9c9c, inset 1px 1px 4px 1px rgb(255, 252, 252);
+    display: grid;
+    grid-template-rows: 75px auto 50px 75px;
+    transition: all 600ms;
+}
+
+.Offers .al-off .bak:hover {
+    box-shadow: 5px 4px 5px 6px #515151, inset 1px 1px 4px 1px rgb(255, 252, 252);
+    transform: scale(1.05, 1.05);
+
+}
+
+.Offers .al-off .bak .na-bak,
+.Offers .al-off .bak .pr-bak,
+.Offers .al-off .bak .se-bak {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.Offers .al-off .bak .pr-bak,
+.Offers .al-off .bak .se-bak {
+    margin-top: 3%;
+}
+
+.Offers .al-off .bak .na-bak h2 {
+    font-family: 'Kanit', sans-serif;
+    background-color: #f2f0f0;
+    box-shadow: 2px 1px 4px 4px rgb(184, 184, 184), inset 3px 3px 3px 3px rgb(255, 252, 252);
+    margin: 10px 50px 10px 50px;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.Offers .al-off .bak .in-bak ul li {
+    margin: 4px;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.Offers .al-off .bak .in-bak ul li svg {
+    position: relative;
+    margin-right: 15px;
+    bottom: 3px;
+}
+
+.Offers .al-off .bak .pr-bak {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+}
+
+.Offers .al-off .bak .se-bak button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: solid 3px rgb(15, 159, 15);
+    cursor: pointer;
 }
 
 
