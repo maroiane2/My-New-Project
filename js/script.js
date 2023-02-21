@@ -20,21 +20,21 @@ bak3.onmouseleave = function () {
 bak2.onmousemove = function () {
     bakbut2.style.background = "green"
     bakbut2.style.transition = "800ms"
-    bakbut3.style.transform = "scale(1.08 , 1.08)"
+    bakbut2.style.transform = "scale(1.08 , 1.08)"
 }
 bak2.onmouseleave = function () {
     bakbut2.style.background = "#f0f0f0"
     bakbut2.style.transition = "1000ms"
-    bakbut3.style.transform = "scale(1 , 1)"
+    bakbut2.style.transform = "scale(1 , 1)"
 }
 
 bak1.onmousemove = function () {
     bakbut1.style.background = "green"
     bakbut1.style.transition = "800ms"
-    bakbut3.style.transform = "scale(1.08 , 1.08)"
+    bakbut1.style.transform = "scale(1.1 , 1.08)"
 }
 bak1.onmouseleave = function () {
     bakbut1.style.background = "#f0f0f0"
     bakbut1.style.transition = "1000ms"
-    bakbut3.style.transform = "scale(1 , 1)"
+    bakbut1.style.transform = "scale(1 , 1)"
 }
