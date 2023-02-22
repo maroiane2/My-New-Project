@@ -45,3 +45,49 @@ bak1.onmouseleave = function () {
     bakbut1.style.transform = "scale(1 , 1)"
 }
 
+
+// let views = 0;
+// let visitors = 0;
+// let customers = 0;
+
+// function updateStats() {
+//   views++;
+//   visitors++;
+//   customers++;
+
+//   document.getElementById("views").innerHTML = views;
+//   document.getElementById("visitors").innerHTML = visitors;
+//   document.getElementById("customers").innerHTML = customers;
+// }
+
+// setInterval(updateStats, 1000);
+
+
+// Get the current values from local storage, or initialize to 0 if not set
+let views = parseInt(localStorage.getItem('views')) || 0;
+let visitors = parseInt(localStorage.getItem('visitors')) || 0;
+let customers = parseInt(localStorage.getItem('customers')) || 0;
+
+// Update the views, visitors, and customers counters
+function updateCounters() {
+    views++;
+    localStorage.setItem('views', views);
+    document.getElementById('views').textContent = views;
+
+    if (localStorage.getItem('firstVisit') === null) {
+        visitors++;
+        localStorage.setItem('firstVisit', 'true');
+    }
+    localStorage.setItem('visitors', visitors);
+    document.getElementById('visitors').textContent = visitors;
+
+    if (localStorage.getItem('isCustomer') === null) {
+        customers++;
+        localStorage.setItem('isCustomer', 'true');
+    }
+    localStorage.setItem('customers', customers);
+    document.getElementById('customers').textContent = customers;
+}
+
+// Call the updateCounters function on every page view
+updateCounters();
