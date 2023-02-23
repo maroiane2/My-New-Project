@@ -267,13 +267,22 @@ main {
 /* views */
 
 .views {
-    padding: 20px;
+    padding: 40px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
 }
 
-span {
+.views p {
+    font-size: 30px;
+}
+
+.views .p {
+    border-right: 2px solid #000;
+    padding-right: 100px;
+}
+
+.views p span {
     font-weight: bold;
     color: red;
 }
