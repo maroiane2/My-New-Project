@@ -6,33 +6,28 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style-type: none;
+}
+/* home */
 
-
-/* header */
-
-header {
-    height: 50px;
-    width: 100%;
-    background-color: #583428;
-    top: 0%;
+nav {
+    transform: rotate(90deg) ;
 }
 
 .nav-bl {
     display: flex;
     justify-content: space-between;
     margin: 0 15px 0 15px;
-    font-family: 'Shantell Sans', cursive;
-
-}
-
-ul {
-    list-style-type: none;
+    font-family: 'Kanit', sans-serif;
 }
 
 .nav-bl ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    color: #000000;
+    background-color: #d0edf1;
 }
 
 .nav-bl ul li {
@@ -40,44 +35,34 @@ ul {
 }
 
 .nav-bl ul li a {
-    color: #ffffff;
     text-decoration: none;
+    color: #000000;
 }
 
-/* main */
-/* 
-main {
-    display: grid;
-    grid-template-rows: 623px 680px 660px 660px 200px;
-} */
-
-/* home */
 
 .Home {
-    background-color: #E39A7F;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    color: #583428;
-    font-family: 'Lobster', cursive;
+    color: #3c1a0e;
+    font-family: 'Kanit', sans-serif;
     text-indent: 6px;
     font-size: medium;
     padding-top: 60px;
     padding-bottom: 75px;
-    box-shadow:
-        inset 0px 10px 10px 0px #e39a7f00,
-        inset 0px -11px 8px -1px #c4ce86;
-}
-
-.Home .hom-tex .hom-log {
-    margin: 0 0 40px 50px;
+    background-image: url("https://img.freepik.com/free-vector/globe-digital-business-gradient-background_53876-99913.jpg?w=740&t=st=1677220970~exp=1677221570~hmac=c25e3f8f4fec969d0b95816ee5647994b618c02be257576cacfe0c4dbaa69638");
+    background-color: #cccccc;
+    height: 660px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .Home .hom-tex .hom-butt button {
     margin: 25px 0 0 500px;
     width: 100px;
     height: 50px;
-    background-color: #52352a;
+    background-color: #3d3836;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -97,10 +82,7 @@ main {
 .Service {
     padding-top: 85px;
     padding-bottom: 90px;
-    background-color: #c4ce86;
-    box-shadow:
-        inset 0px 10px 10px 0px #e39a7f00,
-        inset 0px -11px 8px -1px #ffffff;
+
 }
 
 .Service .ser-al {
@@ -114,10 +96,10 @@ main {
     margin-left: 350px;
 }
 
-.Service .ser-vid {
+/* .Service .ser-vid {
     box-shadow:
         inset 5px 0px 5px 5px #c4ce86;
-}
+} */
 
 .Service .ser-vid video {
     position: relative;
@@ -269,7 +251,6 @@ main {
 
 /* footer */
 
-
 .footer {
     display: flex;
     flex-flow: row wrap;
@@ -277,6 +258,7 @@ main {
     color: #2f2f2f;
     background-color: #fff;
     border-top: 1px solid #cecece;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 .footer>* {
@@ -343,7 +325,8 @@ main {
 }
 
 .nav__ul a {
-    color: #999;
+    color: #808080;
+    font-family: 'Tilt Neon', cursive;
 }
 
 .nav__ul--extra {
