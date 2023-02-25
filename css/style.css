@@ -13,21 +13,22 @@ ul {
 
 nav {
     transform: rotate(90deg) ;
+    width: 100px;
 }
 
 .nav-bl {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 15px 0 15px;
     font-family: 'Kanit', sans-serif;
+    position: relative;
+    top: 52%; 
+    left: -150%;
 }
 
 .nav-bl ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    color: #000000;
-    background-color: #d0edf1;
+    background-color: #f6fafa;
+    width: 300px;
 }
 
 .nav-bl ul li {
@@ -36,90 +37,34 @@ nav {
 
 .nav-bl ul li a {
     text-decoration: none;
-    color: #000000;
+    color: #145e6a;
 }
 
 
 .Home {
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    color: #3c1a0e;
+    color: #05373e;
     font-family: 'Kanit', sans-serif;
     text-indent: 6px;
     font-size: medium;
     padding-top: 60px;
     padding-bottom: 75px;
+    height: 660px;
     background-image: url("https://img.freepik.com/free-vector/globe-digital-business-gradient-background_53876-99913.jpg?w=740&t=st=1677220970~exp=1677221570~hmac=c25e3f8f4fec969d0b95816ee5647994b618c02be257576cacfe0c4dbaa69638");
     background-color: #cccccc;
-    height: 660px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.Home .hom-tex .hom-butt button {
-    margin: 25px 0 0 500px;
-    width: 100px;
-    height: 50px;
-    background-color: #3d3836;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: larger;
-    font-family: 'Shantell Sans', cursive;
+.hom-tex {
+    position: absolute;
+    top: 25%;
+    left: 41%; 
 }
 
-.Home .hom-tex .hom-butt button:active {
-    border-top: solid 4px #000000;
-    border-left: solid 4px #000000;
-    border-bottom: solid 1px #313131;
-    border-right: solid 1px #313131;
-}
-
-/* Service */
-
-.Service {
-    padding-top: 85px;
-    padding-bottom: 90px;
-
-}
-
-.Service .ser-al {
-    border-radius: 10px;
-    display: grid;
-    grid-template-columns: 35% 65%;
-    width: 900px;
-    height: 500px;
-    background-color: #1A1A1A;
-    color: #71DB77;
-    margin-left: 350px;
-}
-
-/* .Service .ser-vid {
-    box-shadow:
-        inset 5px 0px 5px 5px #c4ce86;
-} */
-
-.Service .ser-vid video {
-    position: relative;
-    right: 300px;
-    top: -25px;
-}
-
-.Service .con-hp {
-    margin-top: 50px;
-    text-align: center;
-    line-height: 30px;
-}
-
-.Service .con-hp p {
-    color: #959595;
-    margin-top: 30px;
-}
-
-.Service .con-hp .p1 {
-    font-weight: bolder;
+.content p{
+    font-size: 15px;
 }
 
 /* Offers */
