@@ -35,14 +35,14 @@ ul {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-} 
+}
 
 .hom-tex {
     position: relative;
     top: 35%;
-} 
+}
 
-.content p{
+.content p {
     font-size: 15px;
 }
 
@@ -53,11 +53,12 @@ ul {
     cursor: pointer;
 }
 
-.nav-bar3{
+.nav-bar3 {
     color: #021a1c !important;
     background-color: #c2e8ee !important;
-    float: right!important;
+    float: right !important;
 }
+
 /* Offers */
 
 .Offers {
