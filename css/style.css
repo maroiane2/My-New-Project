@@ -9,71 +9,63 @@
 ul {
     list-style-type: none;
 }
+
 /* home */
 
-nav {
-    transform: rotate(90deg) ;
-    width: 100px;
-}
-
-.nav-bl {
+.w3-top {
     font-family: 'Kanit', sans-serif;
-    position: relative;
-    top: 52%; 
-    left: -150%;
+    background-color: #c2e8ee;
 }
 
-.nav-bl ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #f6fafa;
-    width: 300px;
-}
-
-.nav-bl ul li {
-    margin: 8px;
-}
-
-.nav-bl ul li a {
+.w3-bar a {
     text-decoration: none;
-    color: #145e6a;
+    color: #043a42;
 }
 
 
 .Home {
-    display: flex;
+    text-align: center;
     color: #05373e;
     font-family: 'Kanit', sans-serif;
     text-indent: 6px;
     font-size: medium;
-    padding-top: 60px;
-    padding-bottom: 75px;
     height: 660px;
     background-image: url("https://img.freepik.com/free-vector/globe-digital-business-gradient-background_53876-99913.jpg?w=740&t=st=1677220970~exp=1677221570~hmac=c25e3f8f4fec969d0b95816ee5647994b618c02be257576cacfe0c4dbaa69638");
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} 
 
 .hom-tex {
-    position: absolute;
-    top: 25%;
-    left: 41%; 
-}
+    position: relative;
+    top: 35%;
+} 
 
 .content p{
     font-size: 15px;
 }
 
+.content button {
+    border: none;
+    background-color: #011518;
+    color: #d9ebee;
+    cursor: pointer;
+}
+
+.nav-bar3{
+    color: #021a1c !important;
+    background-color: #c2e8ee !important;
+    float: right!important;
+}
 /* Offers */
 
 .Offers {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #fff;
-    box-shadow: inset 0 -5px 5px 2px #f1edeb;
+    box-shadow: inset 0 -5px 5px 2px #dddedf;
+    background-color: #eef6f7;
 }
 
 .Offers .al-off {
@@ -150,7 +142,7 @@ nav {
 /* Customer */
 
 .Customer {
-    background-color: #f1edeb;
+    background-color: #dddedf;
     padding-top: 45px;
     padding-bottom: 45px;
 }
@@ -163,7 +155,7 @@ nav {
 .Customer .cus-all>.cus-blo {
     background-color: #d6d2d1;
     width: 300px;
-    height: 300px;
+    /* height: 300px; */
     margin: 50px auto;
     display: grid;
     grid-template-rows: 50px auto 50px;
@@ -184,13 +176,13 @@ nav {
 }
 
 .Customer .cus-all .cus-blo .cus-des p {
-    color: #707070;
+    color: #043a42;
     font-size: 50px;
 }
 
 .Customer .cus-all .cus-blo .cus-nam {
     text-align: center;
-    color: #21110b;
+    color: #0c5358;
     font-size: 25px;
 }
 
@@ -200,7 +192,7 @@ nav {
     display: flex;
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
-    color: #2f2f2f;
+    color: #2f2f2f00;
     background-color: #fff;
     border-top: 1px solid #cecece;
     font-family: 'Merriweather Sans', sans-serif;
@@ -224,6 +216,7 @@ nav {
 .nav__title {
     font-weight: 400;
     font-size: 15px;
+    color: #023c44;
 }
 
 .footer address {
@@ -237,7 +230,7 @@ nav {
     justify-content: center;
     height: 36px;
     max-width: max-content;
-    background-color: rgb(33, 33, 33, 0.07);
+    background-color: #58b2be;
     border-radius: 100px;
     color: #2f2f2f;
     line-height: 0;

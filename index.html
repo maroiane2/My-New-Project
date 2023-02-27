@@ -14,33 +14,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <main>
+
         <div class="Home" id="Home">
-            <nav>
-                <div class="nav-bl">
-                    <ul>
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#Service">Service</a></li>
-                        <li><a href="#Offers">Offers</a></li>
-                        <li><a href="#About-Us">About Us</a></li>
-                    </ul>
+            <!-- Navbar -->
+            <div class="w3-top">
+                <div class="w3-bar w3-left-align">
+                    <a class="nav-bar3 w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white " href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+                    <a href="#"  class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>CODICAL</a>
+                    <a href="#Home" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Work</a>
+                    <a href="#Offers" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Price</a>
+                    <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Team</a>
+                    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About US</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
                 </div>
-            </nav>
+
+                <!-- Navbar on small screens -->
+                <div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+                    <a href="#work" class="w3-bar-item w3-button">Work</a>
+                    <a href="#Offers" class="w3-bar-item w3-button">Price</a>
+                    <a href="#team" class="w3-bar-item w3-button">Team</a>
+                    <a href="#contact" class="w3-bar-item w3-button">About US</a>
+                    <a href="#" class="w3-bar-item w3-button">Search</a>
+                </div>
+            </div>
             <div class="hom-tex">
                 <div class="content">
                     <h1>Welcome to CODICAL</h1>
                     <br>
                     <p>
                         Our site works to help you develop, modify or program a complete website from scratch, <br>
-                        with different advantages as you wish, and there are other advantages that you can see below.
+                        with different advantages as you wish, and there are other advantages that you can see
+                        below.
                     </p>
+                    <br>
+                    <a href="#Offers"><button  style="width:200px;height:55px;">let's go</button></a>
                 </div>
             </div>
         </div>
+
+
         <div class="Offers" id="Offers">
             <div class="al-off">
                 <div class="bak-3 bak" id="bak-3">
@@ -303,7 +324,8 @@
                 </div>
             </div>
         </div>
-        <div class="Customer">
+
+        <div class="Customer" id="team">
             <div class="cus-all">
                 <div class="cus-1 cus-blo">
                     <div class="cus-img-1 cus-img">
@@ -394,7 +416,8 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
+
+    <footer class="footer" id="contact">
         <div class="footer__addr">
             <h1 class="footer__logo"><img src="img/footer-logo.jpg" alt=""></h1>
             <h2>Contact</h2>
@@ -460,6 +483,29 @@
             </div>
         </div>
     </footer>
+    <script>
+        function w3_open() {
+            var x = document.getElementById("mySidebar");
+            x.style.width = "300px";
+            x.style.paddingTop = "10%";
+            x.style.display = "block";
+        }
+
+        // Close side navigation
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+        // Used to toggle the menu on smaller screens when clicking on the menu button
+        function openNav() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
     <script src="js/script.js"></script>
 </body>
 
